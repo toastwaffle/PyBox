@@ -1,0 +1,36 @@
+File Tracker:
+Use watchdog
+Add to queue
+Track add/delete/change
+Snapshot on change if not closed
+
+Settings/Setup:
+Authorise to server
+Select folders to track
+Set server location
+Turn snapshotting on/off
+
+Notification Icon:
+Opens Settings/Setup
+
+Processor (Local Changes):
+Reads queue ordered by timestamp of event
+Generates hash for filename
+Submits to S3
+Submits to server
+Receives list of changes
+Adds changes to queue
+
+Processor (Non-local Changes):
+Reads queue
+Check for file conflicts, add as conflict file if necessary
+Check if open, add as conflict file if necessary
+Notify user if conflict
+Download from S3
+
+Database:
+Watched folder paths -> server folder ID
+Changed files queue
+
+Initialiser:
+os.walk to add all files when first installed

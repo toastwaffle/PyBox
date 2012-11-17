@@ -1,0 +1,15 @@
+Database:
+Folders
+Files
+Objects
+Log
+Clients
+
+Behaviour:
+Receive PUT'd JSON, parse
+Update file records
+Add change to log
+Retrieve log entries since client's last update not from client
+Get client's last update for each changed file
+Reduce to last state (i.e. final objectID)
+Compose into JSON response

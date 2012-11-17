@@ -1,0 +1,6 @@
+#!/usr/bin/env python2
+
+import libpybox
+import pybox_server
+
+pybox_server.Start()

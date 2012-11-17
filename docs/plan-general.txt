@@ -1,0 +1,2 @@
+Communication in JSON
+Sod POSTed fields, use PUT to send JSON
